@@ -96,7 +96,7 @@ def find_password():
         # read old data
         data_file = json.load(file)
         if website in data_file:
-            messagebox.showinfo(title=website , message=f"Email:{mail} \n Password: {data_file[website]['password']}")
+            messagebox.showinfo(title=website , message=f"Email: {data_file[website]['email']}\nPassword: {data_file[website]['password']}")
 
         else:
             messagebox.showinfo(title="Error" , message="No data file found")
